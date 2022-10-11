@@ -1,0 +1,34 @@
+{
+  "name": "@yu/location-to-source",
+  "version": "0.1.0",
+  "description": "绑定打开编辑器请求事件",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sufangyu/source-location.git",
+    "directory": "packages/location-to-source"
+  },
+  "bugs": {
+    "url": "https://github.com/sufangyu/source-location/issues"
+  },
+  "homepage": "https://github.com/sufangyu/source-location/tree/main/packages/location-to-source#readme",
+  "author": "sufangyu",
+  "license": "MIT"
+}

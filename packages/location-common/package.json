@@ -1,0 +1,39 @@
+{
+  "name": "@yu/location-common",
+  "version": "0.1.0",
+  "description": "公共能力",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "unbuild --stub",
+    "build": "unbuild"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "webpack",
+    "webpack-loader",
+    "source-location",
+    "location-common"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sufangyu/source-location.git",
+    "directory": "packages/location-common"
+  },
+  "bugs": {
+    "url": "https://github.com/sufangyu/source-location/issues"
+  },
+  "homepage": "https://github.com/sufangyu/source-location/tree/main/packages/location-common#readme",
+  "author": "sufangyu",
+  "license": "MIT"
+}
