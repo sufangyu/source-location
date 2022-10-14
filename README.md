@@ -17,6 +17,7 @@ npm install @yu/location-common --save-dev
 ```
 
 **2、配置 vue.config.js**
+
 在 vue.config.js 配置使用 loader，启动一个API去接收/响应发起的打开 IDE 请求
 ```js
 const { openEditor } = require('@yu/location-common');
@@ -51,6 +52,7 @@ module.exports = {
 ```
 
 **3、配置绑定事件**
+
 为带 data-location 的元素绑定 shift + 右键事件，发起打开 IDE 的请求
 ```js
 // main.js/main.ts
@@ -73,6 +75,7 @@ npm install @yu/location-to-source --save
 ```
 
 **2、配置 vite.config.js**
+
 在 vue.config.js 配置使用 loader，启动一个API去接收/响应发起的打开 IDE 请求
 ```js
 import vitePluginSourceLocation from "@yu/vite-plugin-source-location";
@@ -97,7 +100,7 @@ import { bindEventForLocation } from "@yu/location-to-source";
 bindEventForLocation(import.meta.env.MODE);
 ```
 
-## 主要
+## 注意
 要配置命令行支持 `code` 以及 `webstorm` 命令打开 IDE
 
 
